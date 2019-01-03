@@ -21,7 +21,8 @@ public class BankAccount {
 		this.accountHolderName = accountHolderName;
 	}
 
-	public BankAccount(int accountNumber, String accountHolderName, double accountBalance) {
+	public BankAccount(int accountNumber, String accountHolderName,
+			double accountBalance) {
 		this.accountNumber = accountNumber;
 		this.accountHolderName = accountHolderName;
 		this.accountBalance = accountBalance;
@@ -42,11 +43,12 @@ public class BankAccount {
 	public double getAccountBalance() {
 		return accountBalance;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "BankAccount [accountNumber=" + accountNumber + ", accountBalance=" + accountBalance
-				+ ", accountHolderName=" + accountHolderName + "]";
+		return "BankAccount [accountNumber=" + accountNumber
+				+ ", accountBalance=" + accountBalance + ", accountHolderName="
+				+ accountHolderName + "]";
 	}
 
 }

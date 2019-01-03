@@ -4,20 +4,24 @@ public class SavingsAccount {
 	private boolean salary;
 	private BankAccount bankAccount;
 
-	public SavingsAccount(String accountHolderName, double accountBalance, boolean salary) {
+	public SavingsAccount(String accountHolderName, double accountBalance,
+			boolean salary) {
 		bankAccount = new BankAccount(accountHolderName, accountBalance);
 		this.salary = salary;
 	}
+
 	public SavingsAccount(String accountHolderName, boolean salary) {
 		bankAccount = new BankAccount(accountHolderName);
 		this.salary = salary;
 	}
 
-	public SavingsAccount(int accountNumber, String accountHolderName, double accountBalance, boolean salary) {
-		bankAccount = new BankAccount(accountNumber, accountHolderName, accountBalance);
+	public SavingsAccount(int accountNumber, String accountHolderName,
+			double accountBalance, boolean salary) {
+		bankAccount = new BankAccount(accountNumber, accountHolderName,
+				accountBalance);
 		this.salary = salary;
 	}
-	
+
 	public boolean isSalary() {
 		return salary;
 	}
@@ -25,7 +29,7 @@ public class SavingsAccount {
 	public void setSalary(boolean salary) {
 		this.salary = salary;
 	}
-	
+
 	public BankAccount getBankAccount() {
 		return bankAccount;
 	}
@@ -36,21 +40,7 @@ public class SavingsAccount {
 
 	@Override
 	public String toString() {
-		return "SavingsAccount [salary=" + salary + ", bankAccount=" + bankAccount + "]";
+		return "SavingsAccount [salary=" + salary + ", bankAccount="
+				+ bankAccount + "]";
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
